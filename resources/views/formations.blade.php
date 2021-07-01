@@ -22,7 +22,6 @@
                 <div class="col-md-12">
                     <div class="section-heading">
                         <h2>Nos Modules</h2>
-                        <a href="products.html">Voir toutes les formations en détail<i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="row container">
@@ -49,8 +48,8 @@
                             <thead>
                             <tr>
                                 <th>Modules</th>
-                                <th>Description</th>
-                                <th>Nombres d'heures</th>
+                                <th>Nombre d'heures en classe</th>
+                                <th>Nombres d'heures en entreprise</th>
                             </tr>
                             </thead>
                             <tbody>
