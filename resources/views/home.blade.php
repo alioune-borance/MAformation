@@ -7,20 +7,20 @@
         <div class="owl-banner owl-carousel">
             <div class="banner-item-01">
                 <div class="text-content">
-                    <h4>Meilleure offre</h4>
-                    <h2>Formation de serrurier</h2>
+                    <h4>Decouvrez</h4>
+                    <h2>La meilleure formation en serrurerie</h2>
                 </div>
             </div>
             <div class="banner-item-02">
                 <div class="text-content">
-                    <h4>Meilleure offre</h4>
-                    <h2>Formation de serrurier</h2>
+                    <h4>La Seule</h4>
+                    <h2>Ecole de formation en serrurerie</h2>
                 </div>
             </div>
             <div class="banner-item-03">
                 <div class="text-content">
-                    <h4>Meilleure offre</h4>
-                    <h2>Formation de serrurier</h2>
+                    <h4>Rejoignez</h4>
+                    <h2>L'aventure</h2>
                 </div>
             </div>
         </div>
@@ -59,9 +59,9 @@
                 <div class="col-md-4">
                     <div class="product-item">
                         <a href="#"><img src="assets/images/form1.jpg" alt="" width="349px" height="273"></a>
-                        <div class="down-content">
+                        <div class="down-content" style="width:348px; height:168px;">
                             <h4>Nos modules </h4>
-                            <p><b>Nos modules sont ...</b></p>
+                            <p><b>Tous nos modules répondent à l'attente du marché. &nbsp; <a href="{{ route('formations') }}">Découvrez les ici</a></b></p>
                             <!-- <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
                             <ul class="stars">
                                 <li><i class="fa fa-star"></i></li>
@@ -77,7 +77,7 @@
                 <div class="col-md-4">
                     <div class="product-item">
                         <a href="#"><img src="assets/images/form2.png" alt="" width="349px" height="273"></a>
-                        <div class="down-content">
+                        <div class="down-content" style="width:348px; height:168px;">
                             <h4>Prix de la formation</h4>
                             <p><b>Le prix de la formation est de 55K par mois pour un total de 300k</b></p>
                             <!-- <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p> -->
@@ -95,7 +95,7 @@
                 <div class="col-md-4">
                     <div class="product-item">
                         <a href="#"><img src="assets/images/form3.jpg" alt="" width="349px" height="273"></a>
-                        <div class="down-content">
+                        <div class="down-content" style="width:348px; height:168px;">
                             <h4>Durée de la formation</h4>
 
                             <p><b>La durée de la formation est de 4 mois en temps plein</b></p>

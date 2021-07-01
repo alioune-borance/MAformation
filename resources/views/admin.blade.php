@@ -45,64 +45,48 @@ https://templatemo.com/tm-546-sixteen-clothing
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <h2>MA <em>Formation</em></h2>
+                    <h2>MA <em>Formation - Partie Admin</em></h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        @if (Request::path() == '/')
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('home') }}">Accueil
-                            <span class="sr-only">(current)</span>
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('adminQuestion') }}">Répondre aux questions
                             </a>
                         </li>
-                        @else
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Accueil
-                            </a>
-                        </li>
-                        @endif
-
-                        @if (Request::path() == 'formations')
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('formations') }}">Nos Modules</a>
-                        </li>
-                        @else 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('formations') }}">Nos Modules</a>
-                        </li>
-                        @endif 
-
-                        @if (Request::path() == 'about')
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('about') }}">Qui sommes nous ?</a>
-                        </li>
-                        @else
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">Qui sommes nous ?</a>
-                        </li>
-                        @endif
-
-                        @if (Request::path() == 'faq') 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('faq') }}">Posez vos questions</a>
-                        </li>
-                        @else
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('faq') }}">Posez vos questions</a>
-                        </li>
-                        @endif
+                        
+                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        @foreach ($questions as $question)
+        <h4>{{ $question->contenu }}</h4><hr>
+        <form action="{{ route('repondreQuestion',[$question->id]) }}" method="post">
+        @csrf
+            <textarea name="reponse" id="" cols="30" rows="10"></textarea><br><br>
 
+            <input type="submit" class="btn btn-dark">
+        </form>
+        @endforeach
+        <br><br>
+        <h4>Comment s'inscrire?</h4>
+        <hr>
+        <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio obcaecati id itaque unde iure libero molestias soluta aspernatur voluptatibus et praesentium ipsam, quae similique non. Magni hic molestias amet!</p>
+        <br><br><br>
 
+        <h4>Quel est le niveau requis pour intégrer la formation ?</h4>
+        <hr>
+        <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio obcaecati id itaque unde iure libero molestias soluta aspernatur voluptatibus et praesentium ipsam, quae similique non. Magni hic molestias amet!</p>
+        <br><br><br>
+    </div>
 
-    @yield('content')
 
     <footer>
         <div class="container">

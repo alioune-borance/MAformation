@@ -17,12 +17,10 @@ class CreateTableReponse extends Migration
             $table->id();
             $table->text('contenu');
             $table->timestamps();
+            $table->integer('question_id');
+            $table->foreign('question_id')->references('id')->on('question');
         });
-
-        Schema::table('question', function (Blueprint $table) {
-            $table->unsignedBigInteger("quest_id");
-            $table->foreign('quest_id')->references('id')->on('question')->onDelete('restrict')->onUpdate('restrict');
-        });
+        
     }
 
     /**

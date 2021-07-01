@@ -25,3 +25,10 @@ Route::get('/formations',['as'=>'formations','uses'=>'Controller@formations']);
 Route::get('/about',['as'=>'about','uses'=>'Controller@about']);
 
 Route::get('/faq',['as'=>'faq','uses'=>'Controller@faq']);
+
+Route::post('/question',['as'=>'question','uses'=>'Controller@question']);
+
+Route::get('/question',['as'=>'adminQuestion','uses'=>'Controller@adminQuestion']);
+
+
+Route::post('/repondreQuestion/{idQ}',['as'=>'repondreQuestion','uses'=>'Controller@repondreQuestion']);

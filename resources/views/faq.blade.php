@@ -31,6 +31,13 @@
         <hr>
         <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio obcaecati id itaque unde iure libero molestias soluta aspernatur voluptatibus et praesentium ipsam, quae similique non. Magni hic molestias amet!</p>
         <br><br><br>
+
+        @foreach ($qu as $q)
+            <h4>{{ $q->contenu }}</h4>
+            <hr>
+            <p style="font-size: 18px;">{{ $q->reponse->contenu }}</p>
+        @endforeach
+        
     </div>
 
 
@@ -46,11 +53,12 @@
                 </div>
                 <div class="col-md-8">
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="{{ route('question') }}" method="post">
+                        @csrf
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                        <input name="nom" type="text" class="form-control" id="name" placeholder="Full Name" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -60,12 +68,12 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <fieldset>
-                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                                        <input name="date" type="text" class="form-control" id="subject" placeholder="date" required="">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                                        <textarea name="contenu" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
