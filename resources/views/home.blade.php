@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="product-item">
-                        <a href="#"><img src="assets/images/form1.jpg" alt="" width="349px" height="273"></a>
+                        <a href="{{ route('home') }}"><img src="assets/images/form1.jpg" alt="" width="349px" height="273"></a>
                         <div class="down-content" style="width:348px; height:168px;">
                             <h4>Nos modules </h4>
                             <p><b>Tous nos modules répondent à l'attente du marché. &nbsp; <a href="{{ route('formations') }}">Découvrez les ici</a></b></p>
