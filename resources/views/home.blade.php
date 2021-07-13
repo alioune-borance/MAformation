@@ -197,6 +197,26 @@
                             <img src="assets/images/silca.png" alt="3">
                         </div>
 
+                        <div class="client-item">
+                            <img src="assets/images/dtdauto.png" alt="3">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/keycode.png" alt="3">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/keyline.jpg" alt="3">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/lockpicks.png" alt="3">
+                        </div>
+
+                        <div class="client-item">
+                            <img src="assets/images/mbe.png" alt="3">
+                        </div>
+
 
 
 

@@ -21,11 +21,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Nos Modules</h2>
+                        <h2>Nos Formations</h2>
                     </div>
                 </div>
-                <div class="row container">
-                    <div class="col-md-8">
+                <div class="container">
+                    <!--<div class="col-md-8">-->
                         <!-- <ul class="list-group">
                             <li class=" row list-group-item">
                                 <h3 class="col-md-4">Modules1</h3>
@@ -43,7 +43,7 @@
                                 <p>10 heures 5heures par semaines</p>
                             </li>
                         </ul> -->
-                        <br><br>
+                        <!--<br><br>
                         <table class="table table-striped">
                             <thead>
                             <tr>
@@ -63,15 +63,63 @@
                             
                             
                             </tbody>
-                        </table>
+                        </table>-->
+
+                        <div class="col-md-12">
+                            <div class="filters-content">
+                                <div class="row grid">
+                                    <div class="col-lg-6 col-md-6 all des">
+                                        <div class="product-item">
+                                            <a href="{{ route('modules') }}"><img src="assets/images/product_01.jpg" alt=""></a>
+                                            <div class="down-content">
+                                                <a href="{{ route('modules') }}"><h4>Tittle goes here</h4></a>
+                                                <h6>$18.25</h6>
+                                                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span>Reviews (12)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 all des">
+                                        <div class="product-item">
+                                            <a href="{{ route('modules') }}"><img src="assets/images/product_01.jpg" alt=""></a>
+                                            <div class="down-content">
+                                                <a href="{{ route('modules') }}"><h4>Tittle goes here</h4></a>
+                                                <h6>$18.25</h6>
+                                                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                                                <ul class="stars">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                                <span>Reviews (12)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="col-md-4">
+                    </div>
+                    <!--<div class="col-md-4">
                         <div class="right-image">
                             <img src="{{ asset('assets/images/feature-image.jpg') }}" alt="">
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
     </div>
+    
 @endsection

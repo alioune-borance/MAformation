@@ -67,13 +67,14 @@ https://templatemo.com/tm-546-sixteen-clothing
 
                         @if (Request::path() == 'formations')
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('formations') }}">Nos Modules</a>
+                            <a class="nav-link" href="{{ route('formations') }}">Nos Formations</a>
                         </li>
                         @else 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('formations') }}">Nos Modules</a>
+                            <a class="nav-link" href="{{ route('formations') }}">Nos Formations</a>
                         </li>
                         @endif 
+
 
                         @if (Request::path() == 'about')
                         <li class="nav-item active">

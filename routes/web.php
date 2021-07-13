@@ -30,5 +30,7 @@ Route::post('/question',['as'=>'question','uses'=>'Controller@question']);
 
 Route::get('/question',['as'=>'adminQuestion','uses'=>'Controller@adminQuestion']);
 
+Route::get('/modules',['as'=>'modules','uses'=>'Controller@modules']);
+
 
 Route::post('/repondreQuestion/{idQ}',['as'=>'repondreQuestion','uses'=>'Controller@repondreQuestion']);

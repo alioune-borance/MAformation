@@ -29,6 +29,11 @@ class Controller extends BaseController
         return view('formations',compact('modules'));
     }
 
+    public function modules(){
+        $modules = Module::all();
+        return view('modules',compact('modules'));
+    }
+
     public function about(){
         $infos = Infos_site::all()->first();
         return view('about',compact('infos'));
